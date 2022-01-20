@@ -23,10 +23,27 @@ tsconfig.json your project’s typescript configuration
 > cdk synth
 
 ### bootstrap the project (done only once when the project is created)
-this will deploy the stack with cdk toolkit
+
 > cdk bootstrap
 or 
 > cdk bootstrap --profile devmum
+
+this will deploy the stack with cdk toolkit
+> cdk deploy
+
+
+open cdk.json and you will see
+"app": "npx ts-node --prefer-ts-exts bin/cdkapp.ts",   (starting point of our application)
+npx = is a program that comes with a latest version of node and helps to download libraries
+ts-node= so npx will download this library . this means we done thave to compile our program into javascript ourself ts node will do it for us
+--prefer-ts-exts = means we will only use files with .ts extension
+and will be executed by our 'bin/cdkapp.ts' file
+
+### to check what are the difference in deployed app and what we have executed locally
+> cdk diff
+
+
+
 
 
 
