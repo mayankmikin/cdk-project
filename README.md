@@ -42,7 +42,8 @@ and will be executed by our 'bin/cdkapp.ts' file
 ### to check what are the difference in deployed app and what we have executed locally
 > cdk diff
 
-
+### show all environement configuration
+> cdk doctor
 
 
 
