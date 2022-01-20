@@ -45,8 +45,38 @@ and will be executed by our 'bin/cdkapp.ts' file
 ### show all environement configuration
 > cdk doctor
 
+> cdk deploy --parameters duration
 
 
+
+
+
+
+
+
+### create backend
+/cdk-project/space-finder-backend$ 
+### create a npm project
+> npm init -y
+
+### instal cdk 
+> npm i -D aws-cdk aws-cdk-lib constructs ts-node typescript
+### create folder infrastructure add two files launcher.ts and spacestack.ts
+### create cdk.json
+{
+    "app": "npx ts-node infrastucture/Launcher.ts"
+}
+
+### as you can see that entry point now is launcher.ts
+### install typescript
+> sudo apt install node-typescript
+### configure tsc 
+> tsc --init
+```
+message TS6071: Successfully created a tsconfig.json file.
+```
+### now change in tsconfig.json file-->     "target": "es5",   to "target": "ES2018"
+or copy paste the tsconfig from cdkapp tsconfig
 
 
 
